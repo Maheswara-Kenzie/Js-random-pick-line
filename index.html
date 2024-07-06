@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Pick Lines</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Picker</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-      
-<!-- Google tag-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM8M9FQSSS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -22,43 +21,49 @@
   gtag('config', 'G-KM8M9FQSSS');
 </script>
 
-  </head>
+</head>
 
 
-  <body>
+<body>
     <section>
-      <div class="container" id="container">
-        <div class="title">
-          <h1>Javascript Random</h1>
-          <h1>Vehicle Picker</h1>
-          <h3>Tulis nama anda dibawah untuk mengetahui 
-          kendaraan apa yang cocok untuk anda </h3>
-          <!-- <span>Gratis!!</span> -->
+        <div class="container" id="container">
+            <div class="title">
+                <h1>Javascript Random</h1>
+                <h1>Vehicle Picker</h1>
+                <h3>
+                    Tulis nama anda dibawah untuk mengetahui 
+                    kendaraan apa yang cocok untuk anda
+                </h3>
+            </div>
+
+            <div class="input">
+                <input type="text" placeholder="Tuliskan Nama Anda Disini" id="input" />
+            </div>
+            <div class="button">
+                <button onclick="picit()" id="picit">cari</button>
+            </div>
         </div>
 
-        <div class="input">
-          <input type="text" placeholder="Tuliskan Namamu disini" id="input" />
-        </div>
-        <div class="button">
-          <button onclick="picit()" id="picit">Cari</button>
-        </div>
-      </div>
-      <div class="hasil" id="hasil">
-        <div class="h3">
-          <h3>
-           Selamat <span id="name"></span>, Kendaraan yang cocok untuk anda adalah:
-          </h3>
-        </div>
+        <div class="hasil" id="hasil">
+            <div class="h3">
+                <h3>
+                    Selamat <span id="name"></span>,Kendaraan yang cocok untuk anda adalah:
+                </h3>
+            </div>
         <div class="kendaraan">
-          <h1 id="kendaraan"></h1>
+            <h1 id="kendaraan"></h1>
         </div>
         <div class="desc">
-          <p>Tetap berhati-hati dalam mengendarai kendaraan yang anda gunakan!</p>
+            <p>
+                tetap berhati hati dalam mengendarai kendaraan yang anda gunakan!
+            </p>
         </div>
-        <button id="se" onclick="location.reload()">Coba Lagi</button>
-      </div>
+        <button id="se" onclick="location.reload()">Coba Lagi</button>    
+        </div>
+
     </section>
+
     <script src="script.js"></script>
     <script src="carlist.js"></script>
-  </body>
+</body>
 </html>
